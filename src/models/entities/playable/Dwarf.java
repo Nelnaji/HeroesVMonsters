@@ -2,8 +2,18 @@ package models.entities.playable;
 import models.entities.Entity;
 
 public class Dwarf extends Entity {
+    private String name;
 
-    public Dwarf(int endu, int stren, int health) {
-        super(endu, stren, health);
+    Dwarf(){};
+
+    Dwarf(String name){
+        this.name= name;
     }
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName(){
+        return this.name;
+    }
+
 }

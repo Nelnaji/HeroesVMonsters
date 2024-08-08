@@ -6,11 +6,6 @@ abstract public class Entity {
     private int stren;
     private int health;
 
-    public Entity(int endu, int stren, int health) {
-        this.endu = endu;
-        this.stren = stren;
-        this.health = health;
-    }
 
 //region GET/SET
     public int getEndu() {

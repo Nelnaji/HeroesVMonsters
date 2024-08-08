@@ -3,7 +3,19 @@ import models.entities.Entity;
 
 public class Human extends Entity {
 
-    public Human(int endu, int stren, int health) {
-        super(endu, stren, health);
+    private String name;
+
+    Human(){};
+    //every playable character has to get a name either set during the constructor or creation
+    Human(String name){
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

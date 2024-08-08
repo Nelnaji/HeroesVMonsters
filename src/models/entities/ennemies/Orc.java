@@ -1,9 +1,15 @@
 package models.entities.ennemies;
 import models.entities.Entity;
+import utils.Dice;
 
-public class Orc extends Entity {
+import java.util.Random;
 
-    public Orc(int endu, int stren, int health) {
-        super(endu, stren, health);
-    }
+
+public class Orc extends Entity implements  {
+
+
+        private int gold = Dice.D6.roll();
+
+
+
 }
