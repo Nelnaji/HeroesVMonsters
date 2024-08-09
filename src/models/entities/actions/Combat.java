@@ -1,7 +1,9 @@
 package models.entities.actions;
 
+import models.entities.Entity;
+
 public interface Combat {
-    public void attaquer();
-    public void defendre();
+    public void attaquer(Entity entite);
+//    public void defendre();
 
 }

@@ -1,5 +1,7 @@
 package models.entities.inventary;
 
-public class Inventary {
+import java.util.List;
 
+public class Inventary {
+//private List<> =
 }

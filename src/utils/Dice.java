@@ -3,7 +3,10 @@ package utils;
 import java.util.*;
 
 public enum Dice {
-    D6(6);
+
+    // chaque valeur correspon au nom de la variable
+    D6(6),
+    D4(4);
 
     private int nbFaces;
 
@@ -18,6 +21,7 @@ public enum Dice {
 
     public int roll() {
         Random rand = new Random();
+        //rand.nextInt(0 ,getNbFaces()+1) cependant il n'est pas necessaire d'écrire le 0
         return rand.nextInt(getNbFaces()) + 1;
     }
 
