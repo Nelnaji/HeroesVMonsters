@@ -5,7 +5,7 @@ import utils.Dice;
 import java.util.Random;
 
 
-public class Orc extends Entity implements  {
+public class Orc extends Entity{
 
 
         private int gold = Dice.D6.roll();
