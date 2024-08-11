@@ -3,7 +3,8 @@ package utils;
 import java.util.*;
 
 public enum Dice {
-    D6(6);
+    D6(6),
+    D4(4);
 
     private int nbFaces;
 

@@ -1,5 +1,8 @@
 package models.entities.inventary;
 
-public class Inventary {
+import java.util.HashMap;
+import java.util.Map;
+
+public interface Inventary {
 
 }

@@ -1,10 +1,13 @@
 package models.entities;
 
+import java.util.Map;
+
 abstract public class Entity {
 
     private int endu;
     private int stren;
     private int health;
+    private Map inventary;
 
 
 //region GET/SET
