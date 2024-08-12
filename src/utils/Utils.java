@@ -21,8 +21,8 @@ public class Utils {
             else {
                 return modifierBonus = 2;
             }
-        }
+        } //end modifier()
 
-    }
+    } //end class Modifier
 
 }

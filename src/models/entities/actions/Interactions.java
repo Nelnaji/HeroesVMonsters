@@ -1,7 +1,8 @@
 package models.entities.actions;
 
 public interface Interactions {
-    public void depecer();
-    public void acheter();
-    public void vendre();
+    public default void depecer(){};
+    public default void acheter() {};
+    public default void vendre() {};
+
 }

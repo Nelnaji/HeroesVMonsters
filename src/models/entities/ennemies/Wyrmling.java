@@ -1,10 +1,8 @@
 package models.entities.ennemies;
 import models.entities.Entity;
+import models.entities.actions.Combat;
 
-public class Wyrmling extends Entity {
+public class Wyrmling extends Entity implements Combat {
 
-    public Wyrmling(int endu, int stren, int health) {
-        super(endu, stren, health);
-    }
 
 }
