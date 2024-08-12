@@ -1,4 +1,6 @@
 package utils;
+
+
 public class Utils {
 
     public static class Modifier {
@@ -9,16 +11,17 @@ public class Utils {
 
             if (baseModifier < 5) {
                 return modifierBonus = -1;
-            } else if (baseModifier < 10) {
+            }
+            else if (baseModifier < 10) {
                 return modifierBonus = 0;
-            } else if (baseModifier < 15) {
+            }
+            else if (baseModifier < 15) {
                 return modifierBonus = 1;
-            } else {
+            }
+            else {
                 return modifierBonus = 2;
             }
-
         }
-
 
     }
 
