@@ -5,22 +5,19 @@ public class Utils {
 
     public static class Modifier {
 
-        public static int modifier(int baseModifier) {
+        public static int modifier(int statValue) {
 
-            int modifierBonus;
+            if (statValue < 5) return  -1;
+            else if (statValue < 10) return  0;
+            else if (statValue < 15) return  1;
+            else return  2;
 
-            if (baseModifier < 5) {
-                return modifierBonus = -1;
-            }
-            else if (baseModifier < 10) {
-                return modifierBonus = 0;
-            }
-            else if (baseModifier < 15) {
-                return modifierBonus = 1;
-            }
-            else {
-                return modifierBonus = 2;
-            }
+
+          /*  if (statValue > 15) return 2;
+            else if(statValue > 10) return 1;
+            else if(statValue > 5) return 0;
+            else return -1;*/
+
         } //end modifier()
 
     } //end class Modifier

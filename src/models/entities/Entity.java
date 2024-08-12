@@ -4,15 +4,18 @@ import models.entities.actions.Combat;
 import models.entities.inventory.Item;
 import utils.Dice;
 import static utils.Utils.Modifier.modifier;
-import java.util.Map;
+
+import java.util.ArrayList;
+import java.util.function.Consumer;
 
 abstract public class Entity implements Combat {
 
+    private Consumer<Entity> dieEvent;
     private int endu =  Dice.D6.roll(4, 3);
     private int stren =  Dice.D6.roll(4, 3);
     private int maxHealth =  3 + Dice.D6.roll(4,3)  + modifier(getEndu());
     private int currentHealth = maxHealth;
-    private Map<Item, Item> inventory;
+    private ArrayList<Item> inventory;
 
 
 //region GET/SET
@@ -44,6 +47,9 @@ abstract public class Entity implements Combat {
         this.currentHealth = currentHealth;
     }
 
+/*    public boolean isAlive(){
+        return currentHealth > 0;
+    }*/
 
 
     //endregion
